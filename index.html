@@ -1,53 +1,132 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公司介绍</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>互联网+酒店品牌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部样式 */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #eee;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            font-size: 24px;
+            color: #666;
+        }
+
+        /* 导航菜单 */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-item {
+            font-size: 16px;
+            color: #444;
+            cursor: pointer;
+        }
+        .nav-item:hover {
+            color: #007bff;
+        }
+
+        /* 内容区块 */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 合作品牌 */
+        .brands {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .brand-item {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        /* 联系按钮 */
+        .contact-btn {
+            display: block;
+            width: 300px;
+            margin: 40px auto;
+            padding: 15px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .brands {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>公司名称</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#services">服务</a></li>
-                <li><a href="#team">团队</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
+    <div class="container">
+        <header class="header">
+            <h1>Web Design</h1>
+            <h2>网页设计</h2>
+        </header>
+
+        <nav class="nav">
+            <div class="nav-item">关于我们</div>
+            <div class="nav-item">企业简介及认证与服务内容</div>
+            <div class="nav-item">发展历程</div>
+            <div class="nav-item">企业文化</div>
+            <div class="nav-item">企业荣誉</div>
         </nav>
-    </header>
 
-    <section id="about" class="section">
-        <h2>关于我们</h2>
-        <p>我们的公司成立于XXXX年，致力于提供优质的产品和服务。我们的使命是提供创新的解决方案，帮助客户实现他们的目标。</p>
-    </section>
+        <section class="section">
+            <h2 class="section-title">我们的优势</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 20px;">每个动态都是一个热点</p>
+            
+            <h2 class="section-title">合作品牌</h2>
+            <div class="brands">
+                <div class="brand-item">测试</div>
+                <div class="brand-item">测试</div>
+                <div class="brand-item">测试</div>
+                <div class="brand-item">测试</div>
+            </div>
+        </section>
 
-    <section id="services" class="section">
-        <h2>我们的服务</h2>
-        <ul>
-            <li>服务一：描述服务内容</li>
-            <li>服务二：描述服务内容</li>
-            <li>服务三：描述服务内容</li>
-        </ul>
-    </section>
-
-    <section id="team" class="section">
-        <h2>我们的团队</h2>
-        <p>我们的团队由一群经验丰富且充满热情的专业人士组成。我们致力于为客户提供最佳的服务和支持。</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>联系我们</h2>
-        <p>邮箱：contact@company.com</p>
-        <p>电话：123-456-7890</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 公司名称. 保留所有权利.</p>
-    </footer>
+        <a href="#" class="contact-btn">联系我们获取解决方案吧</a>
+    </div>
 </body>
-                                     </html>
+    </html>
